@@ -1,0 +1,19 @@
+### 증상 등록
+POST http://localhost:5000/symptom
+content-type: application/json
+
+{
+    "question_id": "question_id", 
+    "symptom": "symptom",
+    "body_part": "body_part"
+}
+
+
+### 유사 증상 관련 질문 아이디 리스트 조회
+POST http://localhost:5000/symptom/rank
+content-type: application/json
+
+{
+    "symptom": "환자의 증상"
+}
+
